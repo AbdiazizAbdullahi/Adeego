@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Vesterbro Bold";
+  src: url("/fonts/Vesterbro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Vesterbro Extrabold";
+  src: url("/fonts/Vesterbro-Extrabold.otf");
+}
+@font-face {
+  font-family: "Vesterbro Light";
+  src: url("/fonts/Vesterbro-Light.otf");
+}
+@font-face {
+  font-family: "Vesterbro Medium";
+  src: url("/fonts/Vesterbro-Medium.otf");
+}
+@font-face {
+  font-family: "Vesterbro Poster";
+  src: url("/fonts/Vesterbro-Poster.otf");
+}
+@font-face {
+  font-family: "Vesterbro Regular";
+  src: url("/fonts/Vesterbro-Regular.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 5s linear infinite;
+}

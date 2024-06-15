@@ -15,9 +15,21 @@ module.exports = {
         "vest-ps": "Vesterbro Poster",
         "vest-rg": "Vesterbro Regular",
       },
-      backgroundColor: {
-        "LightGreen" : "#B3D5C8",
-        "DeepGreen" : "#017449"
+      colors: {
+        "LightGreen": "#B3D5C8",
+        "DeepGreen": "#017449",
+        "DarkGrey": "#1F1F1F",
+        "Cream": "#F2F2F2"
+      },
+      height: {
+        "700": "560px",
+        "400": "420px",
+        "70": "224px"
+      },
+      width: {
+        "1000": "800px",
+        "600": "600px",
+        "100": "320px",
       }
     },
   },

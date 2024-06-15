@@ -6,12 +6,12 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="flex gap-1">
         {[...Array(5)].map((_, i) => (
           <div>
-            <Star className="fill-yellow-500 stroke-yellow-500" />
+            <Star className=" fill-DeepGreen stroke-DeepGreen" />
           </div>
         ))}
       </div>
-      <p className="max-w-lg lg:text-2xl">{testimonial.message}</p>
-      <p>~ {testimonial.user}</p>
+      <p className="max-w-lg lg:text-l font-medium">{testimonial.message}</p>
+      <p className=" font-bold">~ {testimonial.user}</p>
     </article>
   );
 };

@@ -1,5 +1,6 @@
 import { socialLinks } from "./Data";
 import RotatingButton from "./RotatingButton";
+import Link from "next/link";
 
 const androidSvg = (
   <svg
@@ -9,7 +10,7 @@ const androidSvg = (
     id="android"
   >
     <path
-      fill="#fff"
+      fill="#017449"
       d="M3.5 8A1.5 1.5 0 0 0 2 9.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 3.5 8zm17 0A1.5 1.5 0 0 0 19 9.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 20.5 8zm-3 0h-11a.5.5 0 0 0-.5.5V17a2 2 0 0 0 2 2v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.5-.5zM6 6.46a.5.5 0 0 0 .5.54h10.97a.5.5 0 0 0 .5-.54 6 6 0 0 0-2.43-4.28l.88-1.42a.5.5 0 0 0-.85-.53l-.88 1.42a5.85 5.85 0 0 0-5.38 0L8.42.24a.5.5 0 1 0-.85.53l.88 1.41A6 6 0 0 0 6 6.46zM14.5 4a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm-4.5.5a.5.5 0 1 1-.5-.5.5.5 0 0 1 .5.5z"
     />
   </svg>
@@ -20,8 +21,8 @@ const iossvg = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
     id="apple"
-    fill="#fff"
-    className="size-6"
+    fill="#017449"
+    className="size-8"
   >
     <g fill-rule="evenodd">
       <path
@@ -39,40 +40,46 @@ const CTA = () => {
   return (
     <main
       id="cta"
-      className="w-full h-screen flex flex-col items-center justify-center gap-6 lg:gap-14 xl:gap-20 bg-neutral-100"
+      className=" flex flex-col items-center justify-center gap-2 lg:gap-14 xl:gap-20 bg-DeepGreen m-5 rounded-2xl"
     >
       <div className="flex flex-col items-center justify-center gap-6 lg:gap-14 xl:gap-20 h-[70%]">
         {" "}
-        <div className="flex flex-col items-center gap-4 lg:gap-6">
-          <p className=" uppercase tracking-tight font-semibold">
-            Start shoppig today
-          </p>
-          <h1 className="tracking-tighter text-4xl md:text-5xl lg:text-7xl font-vest-b text-center">
+        <div className="flex flex-col items-center gap-4 lg:gap-6 pt-10">
+          <h1 className="tracking-tighter text-Cream text-4xl md:text-3xl lg:text-5xl font-vest-b text-center">
             Ready to Fill Your <br /> Pantry?
           </h1>
+          <p className=" uppercase tracking-tight text-Cream font-semibold">
+            Download Adeego now from your App Store!
+          </p>
         </div>
         <div className="flex flex-col gap-1">
-          <button className="bg-green-600 rounded-full p-4 lg:min-h-16 text-white px-8 flex items-center gap-4 font-medium">
-            Adeego for Android
-            {androidSvg}
-          </button>
-          <button className="bg-black rounded-full p-4 lg:min-h-16 text-white px-8 flex items-center justify-center gap-4 font-medium">
-            Adeego for IOS
-            {iossvg}
-          </button>
+          <Link href="https://play.google.com/store/apps/details?id=com.adeego_co.Adeego" passHref target="_blank" rel="noopener noreferrer">
+            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center gap-4 ">
+              Adeego for Android
+              {androidSvg}
+            </button>
+          </Link>
+          <Link href="https://apps.apple.com/ke/app/adeego/id6479957451" passHref target="_blank" rel="noopener noreferrer">
+            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center justify-center gap-4">
+              Adeego for IOS
+              {iossvg}
+            </button>
+          </Link>
+          
+          
         </div>
       </div>
 
-      <div className="lg:ml-auto lg:px-10">
-        <div className="flex flex-col justify-center text-center lg:text-right  gap-3">
-          <p>Get in touch</p>
-          <div className="flex items-center gap-4 justify-center lg:justify-end">
+      <div className=" lg:px-10 py-5 bg-LightGreen mb-4 rounded-2xl">
+        <div className="flex flex-col items-center text-center lg:text-right  gap-3">
+          <p className=" text-DarkGrey text-3xl font-semibold">Get in touch</p>
+          {/* <div className="flex items-center gap-4 justify-center lg:justify-end">
             {socialLinks.map((link, i) => (
               <a href="">{link.icon()}</a>
             ))}
-          </div>
-          <a href="">adeego@gmail.com</a>
-          <a href="">+25473245678</a>
+          </div> */}
+          <a className=" font-medium text-lg text-DeepGreen" href="">Email: adeego@gmail.com</a>
+          <a className=" font-medium text-lg text-DeepGreen" href="">Phone: +25473245678</a>
         </div>
       </div>
     </main>

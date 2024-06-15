@@ -4,8 +4,8 @@ const FeatureCard = ({ feature, activeIndex }) => {
   return (
     <article className="p-8 flex flex-col gap-7 md:gap-16 lg:grid grid-cols-2 h-full">
       <div className="w-full h-full lg:flex items-center justify-end lg:px-10">
-        <div className="w-full max-w-lg h-96 md:h-[34rem] bg-neutral-400">
-          <img src="" alt="" />
+        <div className="w-full max-w-lg h-96 md:h-[34rem] ">
+          <img className=" rounded-2xl" src={feature.image} alt="" />
         </div>
       </div>
       <div className="flex items-center gap-1 md:gap-2 lg:hidden">

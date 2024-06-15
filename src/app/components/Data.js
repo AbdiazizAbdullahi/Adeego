@@ -5,33 +5,13 @@ export const features = [
     heading: () => {
       return (
         <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
-          <span className="text-yellow-500">Lightning</span>-Fast delivery
+          Express delivery. 
         </h1>
       );
     },
     description:
-      "Receive your orders in record time with our reliable and efficient delivery service. We ensure a hassle-free shopping experience, so you can enjoy your purchases sooner.",
-    image: "https://example.com/images/fast-delivery.jpg",
-  },
-  {
-    heading: () => (
-      <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
-        Speedy Shipping
-      </h1>
-    ),
-    description:
-      "Get your purchases delivered quickly to your doorstep. Our logistics team ensures your orders are processed and shipped without delay, guaranteeing satisfaction with every order.",
-    image: "https://example.com/images/quick-delivery.jpg",
-  },
-  {
-    heading: () => (
-      <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
-        Wide range of products
-      </h1>
-    ),
-    description:
-      "Explore a vast selection, from dairy products to snacks, gas, cleaning supplies, dry foods, and fresh groceries all in one place. We cater to all your household needs.",
-    image: "https://example.com/images/variety-of-products.jpg",
+      "Get your order delivered to your door in 30 minutes, at no extra cost.",
+    image: "https://firebasestorage.googleapis.com/v0/b/adeego-6d3be.appspot.com/o/AdeegoWebImages%2Fdelivery.png?alt=media&token=8207d336-a464-4ab5-bf32-182c2fe4b9a8",
   },
   {
     heading: () => (
@@ -41,17 +21,17 @@ export const features = [
     ),
     description:
       "Enjoy a diverse inventory with thousands of products available, ensuring you'll find what you're looking for. Our extensive range means more choices for you.",
-    image: "https://example.com/images/6000-items.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/adeego-6d3be.appspot.com/o/AdeegoWebImages%2Fstock.png?alt=media&token=6507550a-0a43-4991-94c8-f4db7e0906d5",
   },
   {
     heading: () => (
       <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
-        Personalized order assistance
+        Reorder Favorites
       </h1>
     ),
     description:
-      "Give us a call and we'll handle your order. Our customer service team is here to assist with any inquiries or special requests, providing a personalized shopping experience.",
-    image: "https://example.com/images/call-order.jpg",
+      "Quickly add items to your Favorites list for fast checkout when reordering.",
+    image: "https://firebasestorage.googleapis.com/v0/b/adeego-6d3be.appspot.com/o/AdeegoWebImages%2Ffavourite.png?alt=media&token=8d22fea4-976c-4b27-9e2d-22ebd6f31c7b",
   },
 ];
 
@@ -59,11 +39,19 @@ export const TestimonialsData = [
   {
     message:
       "The app is excellent it has nice security features easy to access and customer support is excellent",
-    user: "ZAKARIA ISSAK",
+    user: "Zakaria Issack",
   },
   {
     message: "Orders on time it's far better than the others",
     user: "Abdulkhalaq",
+  },
+  {
+    message: "Goodbye to crowded aisles and long checkout lines you won't be missed .Adeego, a life changer",
+    user: "Kinglamarr",
+  },
+  {
+    message: "Wow! I love this app gives fast delivery",
+    user: "Mohamed suleiy",
   },
 ];
 

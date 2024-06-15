@@ -39,9 +39,9 @@ html, body{
 }
 @keyframes spin {
   to {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
   }
 }
 .animate-spin {
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
 }

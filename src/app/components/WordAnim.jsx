@@ -49,7 +49,7 @@ const WordAnim = () => {
               transition={{
                 duration: 0.25,
               }}
-              className="font-vest-b text-4xl md:text-5xl lg:text-7xl tracking-tighter"
+              className="font-vest-b text-4xl md:text-3xl lg:text-5xl tracking-tighter"
               style={{
                 color: category.color,
               }}

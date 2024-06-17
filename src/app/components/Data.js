@@ -4,7 +4,7 @@ export const features = [
   {
     heading: () => {
       return (
-        <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
+        <h1 className="font-vest-b tracking-tighter text-2xl md:text-3xl lg:text-5xl lg:max-w-lg ">
           Express delivery. 
         </h1>
       );
@@ -15,7 +15,7 @@ export const features = [
   },
   {
     heading: () => (
-      <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
+      <h1 className="font-vest-b tracking-tighter text-2xl md:text-3xl lg:text-5xl lg:max-w-lg ">
         Over 6000+ items in stock
       </h1>
     ),
@@ -25,7 +25,7 @@ export const features = [
   },
   {
     heading: () => (
-      <h1 className="font-vest-b tracking-tighter text-3xl md:text-5xl lg:text-7xl lg:max-w-lg ">
+      <h1 className="font-vest-b tracking-tighter text-2xl md:text-3xl lg:text-5xl lg:max-w-lg ">
         Reorder Favorites
       </h1>
     ),

@@ -54,13 +54,13 @@ const CTA = () => {
         </div>
         <div className="flex flex-col gap-1">
           <Link href="https://play.google.com/store/apps/details?id=com.adeego_co.Adeego" passHref target="_blank" rel="noopener noreferrer">
-            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center gap-4 ">
+            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center gap-4 w-72 ">
               Adeego for Android
               {androidSvg}
             </button>
           </Link>
-          <Link href="https://apps.apple.com/ke/app/adeego/id6479957451" passHref target="_blank" rel="noopener noreferrer">
-            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center justify-center gap-4">
+          <Link className="flex items-center justify-center" href="https://apps.apple.com/ke/app/adeego/id6479957451" passHref target="_blank" rel="noopener noreferrer">
+            <button className="bg-LightGreen rounded-full p-4 lg:min-h-16 text-DeepGreen font-semibold px-8 flex items-center justify-center gap-4 w-72">
               Adeego for IOS
               {iossvg}
             </button>
@@ -78,8 +78,8 @@ const CTA = () => {
               <a href="">{link.icon()}</a>
             ))}
           </div> */}
-          <a className=" font-medium text-lg text-DeepGreen" href="">Email: adeego@gmail.com</a>
-          <a className=" font-medium text-lg text-DeepGreen" href="">Phone: +25473245678</a>
+          <a className=" font-medium text-lg text-DeepGreen" href="mailto:adeego@gmail.com">Email: adeego@gmail.com</a>
+          <a className=" font-medium text-lg text-DeepGreen" href="tel:+254725970724">Phone: +254725970724</a>
         </div>
       </div>
     </main>

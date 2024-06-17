@@ -1,7 +1,8 @@
 import Image from "next/image";
 import WordAnim from "./components/WordAnim";
 import RotatingButton from "./components/RotatingButton";
-import Features from "./components/Features/Features";
+// import Features from "./components/Features/Features";
+import FeaturesCarousel from "./components/Features/Features";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
 
@@ -54,7 +55,8 @@ export default function Home() {
       </div>
 
       <div>
-        <Features />
+        {/* <Features /> */}
+        <FeaturesCarousel />
       </div>
       <Testimonials />
       <CTA />
